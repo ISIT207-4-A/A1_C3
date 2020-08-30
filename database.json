@@ -1,0 +1,561 @@
+[{
+  "name": "glasses",
+  "code": "dcm52",
+  "color": "YELLOW",
+  "price": 17996,
+  "weight": 14
+},
+  {
+    "name": "phone",
+    "code": "vnb70",
+    "color": "RED",
+    "price": 45126,
+    "weight": 37
+  },
+  {
+    "name": "tool",
+    "code": "fnc18",
+    "color": "WHITE",
+    "price": 40145,
+    "weight": 42
+  },
+  {
+    "name": "carpet",
+    "code": "vld28",
+    "color": "BLUE",
+    "price": 17368,
+    "weight": 47
+  },
+  {
+    "name": "keyboard",
+    "code": "yfr66",
+    "color": "LIME",
+    "price": 34671,
+    "weight": 26
+  },
+  {
+    "name": "dress",
+    "code": "scx14",
+    "color": "GREEN",
+    "price": 13563,
+    "weight": 24
+  },
+  {
+    "name": "bed",
+    "code": "pok10",
+    "color": "GREEN",
+    "price": 24748,
+    "weight": 11
+  },
+  {
+    "name": "glasses",
+    "code": "tnk53",
+    "color": "GRAY",
+    "price": 26832,
+    "weight": 16
+  },
+  {
+    "name": "chair",
+    "code": "fyb105",
+    "color": "BLACK",
+    "price": 39734,
+    "weight": 25
+  },
+  {
+    "name": "phone",
+    "code": "bgb69",
+    "color": "WHITE",
+    "price": 23565,
+    "weight": 14
+  },
+  {
+    "name": "lamp",
+    "code": "ivz810",
+    "color": "SILVER",
+    "price": 41798,
+    "weight": 57
+  },
+  {
+    "name": "earphone",
+    "code": "zpd37",
+    "color": "YELLOW",
+    "price": 33673,
+    "weight": 36
+  },
+  {
+    "name": "ice",
+    "code": "tbe85",
+    "color": "RED",
+    "price": 22979,
+    "weight": 56
+  },
+  {
+    "name": "phone",
+    "code": "xzq109",
+    "color": "LIME",
+    "price": 47740,
+    "weight": 31
+  },
+  {
+    "name": "car",
+    "code": "fsc109",
+    "color": "GRAY",
+    "price": 3095,
+    "weight": 39
+  },
+  {
+    "name": "wardrobe",
+    "code": "eis19",
+    "color": "BLUE",
+    "price": 43983,
+    "weight": 20
+  },
+  {
+    "name": "wardrobe",
+    "code": "wry1010",
+    "color": "OLIVE",
+    "price": 26214,
+    "weight": 43
+  },
+  {
+    "name": "dress",
+    "code": "dht90",
+    "color": "BLACK",
+    "price": 3872,
+    "weight": 48
+  },
+  {
+    "name": "refrigerator",
+    "code": "vtp30",
+    "color": "PURPLE",
+    "price": 25057,
+    "weight": 56
+  },
+  {
+    "name": "carpet",
+    "code": "teg08",
+    "color": "SILVER",
+    "price": 40151,
+    "weight": 24
+  },
+  {
+    "name": "car",
+    "code": "sdx70",
+    "color": "OLIVE",
+    "price": 30795,
+    "weight": 17
+  },
+  {
+    "name": "cable",
+    "code": "pqt73",
+    "color": "BLUE",
+    "price": 21547,
+    "weight": 32
+  },
+  {
+    "name": "tool",
+    "code": "hdq97",
+    "color": "RED",
+    "price": 38595,
+    "weight": 54
+  },
+  {
+    "name": "ice",
+    "code": "cju50",
+    "color": "GRAY",
+    "price": 49737,
+    "weight": 12
+  },
+  {
+    "name": "pillow",
+    "code": "kcl73",
+    "color": "LIME",
+    "price": 9728,
+    "weight": 17
+  },
+  {
+    "name": "glasses",
+    "code": "ska010",
+    "color": "LIME",
+    "price": 36693,
+    "weight": 16
+  },
+  {
+    "name": "chair",
+    "code": "eek37",
+    "color": "GREEN",
+    "price": 16831,
+    "weight": 11
+  },
+  {
+    "name": "ice",
+    "code": "zki70",
+    "color": "WHITE",
+    "price": 35563,
+    "weight": 24
+  },
+  {
+    "name": "tool",
+    "code": "ueq26",
+    "color": "OLIVE",
+    "price": 15120,
+    "weight": 19
+  },
+  {
+    "name": "ice",
+    "code": "crm81",
+    "color": "MAROON",
+    "price": 38240,
+    "weight": 44
+  },
+  {
+    "name": "lamp",
+    "code": "iee29",
+    "color": "GREEN",
+    "price": 30771,
+    "weight": 52
+  },
+  {
+    "name": "refrigerator",
+    "code": "poo61",
+    "color": "LIME",
+    "price": 41469,
+    "weight": 27
+  },
+  {
+    "name": "calculator",
+    "code": "wly85",
+    "color": "BLACK",
+    "price": 22555,
+    "weight": 24
+  },
+  {
+    "name": "chair",
+    "code": "iru53",
+    "color": "OLIVE",
+    "price": 21033,
+    "weight": 24
+  },
+  {
+    "name": "tool",
+    "code": "soo01",
+    "color": "BLUE",
+    "price": 47230,
+    "weight": 53
+  },
+  {
+    "name": "desk",
+    "code": "may91",
+    "color": "YELLOW",
+    "price": 42706,
+    "weight": 16
+  },
+  {
+    "name": "carpet",
+    "code": "qhb42",
+    "color": "GREEN",
+    "price": 10350,
+    "weight": 29
+  },
+  {
+    "name": "refrigerator",
+    "code": "mzb38",
+    "color": "RED",
+    "price": 16997,
+    "weight": 45
+  },
+  {
+    "name": "bed",
+    "code": "pln46",
+    "color": "MAROON",
+    "price": 25132,
+    "weight": 19
+  },
+  {
+    "name": "refrigerator",
+    "code": "qye64",
+    "color": "RED",
+    "price": 36197,
+    "weight": 14
+  },
+  {
+    "name": "cable",
+    "code": "lxl04",
+    "color": "LIME",
+    "price": 12573,
+    "weight": 45
+  },
+  {
+    "name": "calculator",
+    "code": "yjt95",
+    "color": "OLIVE",
+    "price": 38439,
+    "weight": 40
+  },
+  {
+    "name": "carpet",
+    "code": "ilx64",
+    "color": "WHITE",
+    "price": 4702,
+    "weight": 20
+  },
+  {
+    "name": "chair",
+    "code": "out48",
+    "color": "BLACK",
+    "price": 23364,
+    "weight": 33
+  },
+  {
+    "name": "phone",
+    "code": "zww100",
+    "color": "OLIVE",
+    "price": 38866,
+    "weight": 18
+  },
+  {
+    "name": "lamp",
+    "code": "nsw73",
+    "color": "LIME",
+    "price": 29403,
+    "weight": 24
+  },
+  {
+    "name": "chair",
+    "code": "zpp103",
+    "color": "PURPLE",
+    "price": 16320,
+    "weight": 17
+  },
+  {
+    "name": "tool",
+    "code": "gen68",
+    "color": "PURPLE",
+    "price": 25952,
+    "weight": 45
+  },
+  {
+    "name": "mouse",
+    "code": "yvf89",
+    "color": "BLACK",
+    "price": 30227,
+    "weight": 60
+  },
+  {
+    "name": "cup",
+    "code": "osn56",
+    "color": "GRAY",
+    "price": 5469,
+    "weight": 21
+  },
+  {
+    "name": "calculator",
+    "code": "jgu19",
+    "color": "WHITE",
+    "price": 29123,
+    "weight": 49
+  },
+  {
+    "name": "chair",
+    "code": "lnn100",
+    "color": "PURPLE",
+    "price": 18030,
+    "weight": 28
+  },
+  {
+    "name": "bed",
+    "code": "kwr42",
+    "color": "GREEN",
+    "price": 17047,
+    "weight": 29
+  },
+  {
+    "name": "wardrobe",
+    "code": "iad110",
+    "color": "SILVER",
+    "price": 49235,
+    "weight": 40
+  },
+  {
+    "name": "ice",
+    "code": "awo39",
+    "color": "LIME",
+    "price": 20060,
+    "weight": 56
+  },
+  {
+    "name": "dress",
+    "code": "fav75",
+    "color": "PURPLE",
+    "price": 22751,
+    "weight": 38
+  },
+  {
+    "name": "wardrobe",
+    "code": "jqn63",
+    "color": "BLUE",
+    "price": 18608,
+    "weight": 33
+  },
+  {
+    "name": "desk",
+    "code": "uen05",
+    "color": "GRAY",
+    "price": 45358,
+    "weight": 22
+  },
+  {
+    "name": "chair",
+    "code": "nyb12",
+    "color": "BLUE",
+    "price": 12746,
+    "weight": 24
+  },
+  {
+    "name": "cup",
+    "code": "tsh17",
+    "color": "GRAY",
+    "price": 23876,
+    "weight": 16
+  },
+  {
+    "name": "calculator",
+    "code": "iyr75",
+    "color": "PURPLE",
+    "price": 9483,
+    "weight": 12
+  },
+  {
+    "name": "monitor",
+    "code": "xbb60",
+    "color": "WHITE",
+    "price": 5347,
+    "weight": 53
+  },
+  {
+    "name": "car",
+    "code": "crz102",
+    "color": "WHITE",
+    "price": 8825,
+    "weight": 34
+  },
+  {
+    "name": "ice",
+    "code": "dbs59",
+    "color": "BLACK",
+    "price": 15041,
+    "weight": 51
+  },
+  {
+    "name": "cup",
+    "code": "dmp23",
+    "color": "GREEN",
+    "price": 27333,
+    "weight": 35
+  },
+  {
+    "name": "ice",
+    "code": "fsv32",
+    "color": "RED",
+    "price": 37396,
+    "weight": 36
+  },
+  {
+    "name": "earphone",
+    "code": "ukh13",
+    "color": "MAROON",
+    "price": 41834,
+    "weight": 54
+  },
+  {
+    "name": "desk",
+    "code": "plz88",
+    "color": "OLIVE",
+    "price": 18874,
+    "weight": 31
+  },
+  {
+    "name": "bed",
+    "code": "uud1010",
+    "color": "RED",
+    "price": 6185,
+    "weight": 24
+  },
+  {
+    "name": "keyboard",
+    "code": "nbh103",
+    "color": "LIME",
+    "price": 13911,
+    "weight": 39
+  },
+  {
+    "name": "cable",
+    "code": "oyu03",
+    "color": "BLUE",
+    "price": 27103,
+    "weight": 58
+  },
+  {
+    "name": "calculator",
+    "code": "niq24",
+    "color": "MAROON",
+    "price": 5147,
+    "weight": 38
+  },
+  {
+    "name": "chair",
+    "code": "wse56",
+    "color": "WHITE",
+    "price": 25860,
+    "weight": 26
+  },
+  {
+    "name": "cup",
+    "code": "rpi105",
+    "color": "GREEN",
+    "price": 44515,
+    "weight": 20
+  },
+  {
+    "name": "carpet",
+    "code": "kih18",
+    "color": "SILVER",
+    "price": 20649,
+    "weight": 23
+  },
+  {
+    "name": "desk",
+    "code": "xjn80",
+    "color": "PURPLE",
+    "price": 25307,
+    "weight": 27
+  },
+  {
+    "name": "cable",
+    "code": "qlz30",
+    "color": "WHITE",
+    "price": 42426,
+    "weight": 23
+  },
+  {
+    "name": "car",
+    "code": "nkk85",
+    "color": "BLACK",
+    "price": 14613,
+    "weight": 59
+  },
+  {
+    "name": "earphone",
+    "code": "ydo63",
+    "color": "BLACK",
+    "price": 37166,
+    "weight": 57
+  },
+  {
+    "name": "bed",
+    "code": "srp15",
+    "color": "BLUE",
+    "price": 19003,
+    "weight": 45
+  }
+]
