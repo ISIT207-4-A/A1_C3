@@ -15,15 +15,13 @@ function limit(){
 		var selectElement = document.getElementsByName('attribute[]');
 		var length = selectElement.length;
 		var checkedValue = null; 
-		console.log("2");
-		for(var i=0; length; i++){
+		for(var i=0; i<length; i++){
 			if(selectElement[i].checked){
 				checkedValue = selectElement[i].value;
 				console.log(checkedValue);
 				selectElement[i].onchange = function() {
 					document.getElementById(checkedValue).disabled = !this.checked;
 				}
-				break;
 			}
 		}
 	}
