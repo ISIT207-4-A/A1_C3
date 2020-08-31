@@ -32,11 +32,27 @@ function limit(){
 	}
 }
 
+<<<<<<< HEAD
 //Filter color
 function FilterArray(item,value){
 	const result = item.filter(it=>it.color==value.uppercase()||it.name==value.uppercase()||it.code==value.uppercase())
 	return result;
 }
+=======
+//Filter
+function FilterArrayByName(scr1,namesearch){
+	const result = scr1.filter(item=>item.name.match(namesearch))
+  return result
+  }
+function FilterArrayByCode(scr1,codesearch){
+	const result = scr1.filter(item=>item.code.match(codesearch))
+  return result
+  }
+function FilterArrayByColor(scr1,colorsearch){
+    const result = scr1.filter(item=>item.color.match(colorsearch))
+    return result
+  }
+>>>>>>> f6da209629aa8878761cc4f5ba35a763aa28bce6
 
 //Filter to console(testing final will be to html)
 $.getJSON("database.json", function(data){
