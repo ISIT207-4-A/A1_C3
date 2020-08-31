@@ -32,7 +32,7 @@ function limit(){
 	}
 }
 
-//Filter
+//Filter color
 function FilterArray(item,value){
 	const result = item.filter(it=>it.color==value.uppercase()||it.name==value.uppercase()||it.code==value.uppercase())
 	return result;
@@ -56,6 +56,4 @@ function enable(){
 	}
 
 	console.log("s");
-	
-	
 }
