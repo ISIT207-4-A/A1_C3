@@ -43,6 +43,8 @@ window.onload = function(){
    collection.push({code:40,type:"Mamgosteen", weight:17, price:21, color:"pink"})
    collection.push({code:41,type:"Rhubard", weight:22, price:22, color:"pink"})
 
+   console.log(collection);
+
    document.getElementById("but").onclick = function(){
        let upper = document.getElementById("Upper").value;
        let lower = document.getElementById("Lower").value;
