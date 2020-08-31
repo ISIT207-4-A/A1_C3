@@ -33,10 +33,18 @@ function limit(){
 }
 
 //Filter
-function FilterArray(item,value){
-	const result = item.filter(it=>it.color==value.uppercase()||it.name==value.uppercase()||it.code==value.uppercase())
-	return result;
-}
+function FilterArrayByName(scr1,namesearch){
+	const result = scr1.filter(item=>item.name.match(namesearch))
+  return result
+  }
+function FilterArrayByCode(scr1,codesearch){
+	const result = scr1.filter(item=>item.code.match(codesearch))
+  return result
+  }
+function FilterArrayByColor(scr1,colorsearch){
+    const result = scr1.filter(item=>item.color.match(colorsearch))
+    return result
+  }
 
 //Filter to console(testing final will be to html)
 $.getJSON("database.json", function(data){
