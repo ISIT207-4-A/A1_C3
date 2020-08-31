@@ -34,7 +34,7 @@ function limit(){
 
 //Filter
 function FilterArray(item,value){
-	const result = item.filter(it=>it.color==value)
+	const result = item.filter(it=>it.color==value||it.name==value||it.code==value)
 	return result;
 }
 
