@@ -122,39 +122,69 @@ function checkLimit(checkboxStatus) {
 		element.disabled = false;
 }
 
+//reset button
+function reset() {
+	for (element of document.getElementsByName("attribute")) {
+		element.checked = false;
+		let checkboxValue = element.value;
+		for (ele of document.getElementsByClassName(checkboxValue)) {
+			ele.disabled = true;
+			ele.value = "";
+		}
+	}
+	resetList();
+}
+
+function resetList() {
+	const ul = document.getElementById("result");
+
+	while (ul.firstChild) {
+		ul.removeChild(ul.firstChild);
+	}
+}
+
 function search() {
+	resetList();
 	var temp = document.getElementsByName("attribute");
 	var result = new Array();
 
 	for (element of temp) {
-		if (element.checked)
-		{
-			let textValue = document.getElementById(element.value).value;
-			var temp = textValue.split("*");
+		if (element.checked) {
+			if (element.value == "name" || element.value == "code" || element.value == "color")
+			{
+				let textValue = document.getElementById(element.value).value;
+				var temp = textValue.split("*");
 
-			if (temp.length == 1) {
-				result = filterByText(itemList, element.value, textValue, result);
-			} else if (temp.length == 3) {
-				//string includes text
-				result = filterByText(itemList, element.value, temp[1], result);
+				if (temp.length == 1) {
+					result = filterByText(itemList, element.value, textValue, result);
+				} else if (temp.length == 3) {
+					//string includes text
+					result = filterByText(itemList, element.value, temp[1], result);
+				} else {
+					if (temp[0] == "")
+						//if *app => start with
+						result = advancedFilterByText(itemList, element.value, temp[1], result, "start");
+					else 
+						//if app* => end with
+						result = advancedFilterByText(itemList, element.value, temp[0], result, "end");
+				}
 			} else {
-				if (temp[0] == "")
-					//if *app => start with
-					result = advancedFilterByText(itemList, element.value, temp[1], result, "start");
-				else 
-					//if app* => end with
-					result = advancedFilterByText(itemList, element.value, temp[0], result, "end");
-			}
+				let inputValues = document.getElementsByClassName(element.value);
+				let lowerVal = parseInt(inputValues[0].value);
+				var upperVal = parseInt(inputValues[1].value);
 
-			var ul = document.getElementById("result");
-			for (item of result) {				
-				let li = document.createElement("li");
-				let itemValue = item.name + " " + item.code + " " + item.color + " " + item.price + " " + item.weight;
-				li.appendChild(document.createTextNode(itemValue));
-				ul.appendChild(li);
-			}
+				result = filterByRange(itemList, element.value, lowerVal, upperVal, result);
 
+			}
 		}
+	}
+
+	var ul = document.getElementById("result");
+	for (item of result) {				
+		let li = document.createElement("li");
+		let itemValue = item.name + " " + item.code + " " + item.color + " " + item.price + " " + item.weight;
+		li.appendChild(document.createTextNode(itemValue));
+		ul.appendChild(li);
 	}
 }
 
@@ -212,34 +242,19 @@ function advancedFilterByText(original, type, val, res, direction) {
 	return result;
 }
 
-//reset button
-function reset() {
-	for (element of document.getElementsByName("attribute")) {
-		element.checked = false;
-		let checkboxValue = element.value;
-		for (ele of document.getElementsByClassName(checkboxValue)) {
-			ele.disabled = true;
-			ele.value = "";
-		}		
-	}
-}
+function filterByRange(original, type, lower, upper, res) {
+	var result;
 
-//Filter to console(testing final will be to html)
-$.getJSON("database.json", function(data){
-    const result = FilterArray(data,"BLUE");
-	console.log(result);
-});
-
-	
-function enable(){
-	var a = document.getElementsByName('attribute');
-	var newvar = 0;
-	var count;
-	for(count=0; count<a.length; count++){
-		if(a[count].checked==true){
-			newvar++;
-		}
+	switch (type) {
+		case "price":
+			result = original.filter(element => (element.price >= lower && element.price <= upper) && !res.includes(element));
+			break;
+		case "weight":
+			result = original.filter(element => (element.weight >= lower && element.weight <= upper) && !res.includes(element));
+			break;
+		default:
+			break;
 	}
 
-	console.log("s");
+	return result;
 }

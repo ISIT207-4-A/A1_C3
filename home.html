@@ -51,13 +51,13 @@
             
             <span><label><input type="checkbox" name="attribute" onchange="checkLimit(this)" value="price"> Price</label></span>
             
-            <input type="text" id="price" class="price" placeholder="Lower bound price" disabled>
-            <input type="text" id="price" class="price" placeholder="Higher bound price" disabled><br /><br />
+            <input type="text" id="price" class="price" placeholder="Lower bound price" pattern="^[0-9]+$" disabled>
+            <input type="text" id="price" class="price" placeholder="Higher bound price" pattern="^[0-9]+$" disabled><br /><br />
             
             <span><label><input type="checkbox" name="attribute" onchange="checkLimit(this)" value="weight"> Weight</label></span>
             
-            <input type="text" id="weight" class="weight" placeholder="Lower bound weight" disabled>
-            <input type="text" id="weight" class="weight" placeholder="Higher bound weight" disabled><br /><br />
+            <input type="text" id="weight" class="weight" placeholder="Lower bound weight" pattern="^[0-9]+$" disabled>
+            <input type="text" id="weight" class="weight" placeholder="Higher bound weight" pattern="^[0-9]+$" disabled><br /><br />
 
             <button onClick="search()">Submit</button>
             <button onClick="reset()">Reset</button>
@@ -65,7 +65,6 @@
 
         <div class="half">
             <ul id="result">
-                <li>Test</li>
             </ul>
         </div>
     </div>
