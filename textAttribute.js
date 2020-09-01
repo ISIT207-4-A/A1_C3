@@ -152,22 +152,29 @@ function search() {
 		if (element.checked) {
 			if (element.value == "name" || element.value == "code" || element.value == "color")
 			{
-				let textValue = document.getElementById(element.value).value;
-				var temp = textValue.split("*");
-
-				if (temp.length == 1) {
-					result = filterByText(itemList, element.value, textValue, result);
-				} else if (temp.length == 3) {
-					//string includes text
-					result = filterByText(itemList, element.value, temp[1], result);
-				} else {
-					if (temp[0] == "")
-						//if *app => start with
-						result = advancedFilterByText(itemList, element.value, temp[1], result, "start");
-					else 
-						//if app* => end with
-						result = advancedFilterByText(itemList, element.value, temp[0], result, "end");
+				if (document.getElementById(element.value).disabled == false) {
+					let textValue = document.getElementById(element.value).value;
+					var temp = textValue.split("*");
+	
+					if (temp.length == 1) {
+						result = filterByText(itemList, element.value, textValue, result);
+					} else if (temp.length == 3) {
+						//string includes text
+						result = filterByText(itemList, element.value, temp[1], result);
+					} else {
+						if (temp[0] == "")
+							//if *app => start with
+							result = advancedFilterByText(itemList, element.value, temp[1], result, "start");
+						else 
+							//if app* => end with
+							result = advancedFilterByText(itemList, element.value, temp[0], result, "end");
+					}
+				} else { //else = color select chosen
+					let selectValue = document.getElementById("color-select").value;
+					result = filterByText(itemList, element.value, selectValue, result);
 				}
+				
+				
 			} else {
 				let inputValues = document.getElementsByClassName(element.value);
 				let lowerVal = parseInt(inputValues[0].value);
@@ -208,7 +215,6 @@ function filterByText(original, type, val, res) {
 
 function advancedFilterByText(original, type, val, res, direction) {
 	var result;
-	console.log(val + " " + direction);
 	if (direction == "start") {
 		switch (type) {
 			case "name":
@@ -257,4 +263,13 @@ function filterByRange(original, type, lower, upper, res) {
 	}
 
 	return result;
+}
+
+function disableCheck(selectStatus) {
+	if (selectStatus.value != "None") {
+		document.getElementById("color").disabled = true;
+
+	} else {
+		document.getElementById("color").disabled = false;
+	}
 }
