@@ -149,8 +149,8 @@ function search() {
 	}
 		}
 	}
+  
 
-	
 }
 
 function filterByText(original, type, val, res) {
@@ -231,3 +231,4 @@ function disableCheck(selectStatus) {
 		document.getElementById("color").disabled = false;
 	}
 }
+
